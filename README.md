@@ -2,11 +2,6 @@
 
 This is a template software project repository used by the [Intermediate Research Software Development Skills In Python](https://github.com/carpentries-incubator/python-intermediate-development).
 
-!! Need Pull Request !!
-
-Helo helo
-I'm just trying to add more line
-
 
 ## Purpose
 

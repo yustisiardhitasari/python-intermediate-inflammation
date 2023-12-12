@@ -23,7 +23,8 @@ def daily_mean(data):
     Calculate the daily mean of a 2D inflammation data array.
 
     Input:
-        dataset - 2D array with inflammation information (each row contains a single measurement of one patient)
+        dataset - 2D array with inflammation information
+                  (each row contains a single measurement of one patient)
 
     Returns:
         an array of average values of daily measurements
@@ -36,7 +37,8 @@ def daily_max(data):
     Calculate the daily max of a 2D inflammation data array.
     
     Input:
-        dataset - 2D array with inflammation information (each row contains a single measurement of one patient)
+        dataset - 2D array with inflammation information
+                  (each row contains a single measurement of one patient)
 
     Returns:
         an array of maximum values of daily measurements
@@ -49,10 +51,24 @@ def daily_min(data):
     Calculate the daily min of a 2D inflammation data array.
     
     Input:
-        dataset - 2D array with inflammation information (each row contains a single measurement of one patient)
+        dataset - 2D array with inflammation information
+                  (each row contains a single measurement of one patient)
 
     Returns:
         an array of minimum values of daily measurements
     """
     return np.min(data, axis=0)
 
+
+def daily_std(data):
+    """
+    Calculate the daily standard deviation of a 2D inflammation data array.
+    
+    Input:
+        dataset - 2D array with inflammation information
+                  (each row contains a single measurement of one patient)
+
+    Returns:
+        an array of daily standard deviation
+    """
+    return np.std(data, axis=0)
